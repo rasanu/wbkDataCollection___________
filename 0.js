@@ -5,6 +5,7 @@ function runDataCollection () {
       wbkDataCollection___________ = new Worker("Data_Collection_Script.js");
     }
     wbkDataCollection___________.onmessage = function (event) {
+      console.log(event);
       console.log(
         document.querySelector(".payouts-block > .payout:nth-child(1)")
           .innerText
