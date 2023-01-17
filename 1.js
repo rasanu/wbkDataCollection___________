@@ -1,1 +1,9 @@
-var i=0;function timedCount(){postMessage(i+=1),setTimeout("timedCount()",500)}timedCount();
+let i = 0;
+
+const timedCount = () => {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
