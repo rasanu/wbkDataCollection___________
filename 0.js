@@ -1,5 +1,5 @@
 var wbkDataCollection___________;
-function runDataCollection () {
+async function runDataCollection () {
   if (typeof Worker !== "undefined") {
     if (typeof wbkDataCollection___________ == "undefined") {
       
